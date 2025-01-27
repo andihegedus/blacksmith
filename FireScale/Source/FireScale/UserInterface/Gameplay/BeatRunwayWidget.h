@@ -1,7 +1,35 @@
 ﻿#pragma once
 
-class BeatRunwayWidget
+#include "CoreMinimal.h"
+#include "Blueprint/UserWidget.h"
+#include "BeatRunwayWidget.generated.h"
+
+class AFireScaleHUD;
+class APCharacter;
+class APController;
+
+UCLASS()
+class FIRESCALE_API UBeatRunwayWidget : public UUserWidget
 {
-public:
+	GENERATED_BODY()
 	
+public:
+	// FUNCTIONS
+	// -----------------------------
+
+	UFUNCTION()
+	void CloseWidget();
+	
+
+	// PROPERTIES & VARIABLES
+	// -----------------------------
+
+	UPROPERTY()
+	APCharacter* PlayerCharacter;
+
+	UPROPERTY()
+	APController* PlayerController;
+
+	UPROPERTY(EditAnywhere)
+	AFireScaleHUD* HUD;
 };

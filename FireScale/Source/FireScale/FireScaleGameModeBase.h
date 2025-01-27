@@ -13,5 +13,13 @@ UCLASS()
 class FIRESCALE_API AFireScaleGameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
+
+protected:
+	// FUNCTIONS
+	// -----------------------------
+	
+	AFireScaleGameModeBase(const FObjectInitializer& ObjectInitializer);
+
+	virtual void BeginPlay() override;
 	
 };

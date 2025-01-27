@@ -1,7 +1,20 @@
 #pragma once
 
-class SaveData
+#include "CoreMinimal.h"
+#include "GameFramework/SaveGame.h"
+#include "SaveData.generated.h"
+
+UCLASS()
+class FIRESCALE_API USaveData : public USaveGame
 {
+	GENERATED_BODY()
+
 public:
+	// FUNCTIONS
+	// -----------------------------
+	USaveData();
+	
+	// PROPERTIES & VARIABLES
+	// -----------------------------
 	
 };

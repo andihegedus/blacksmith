@@ -1,7 +1,19 @@
 #pragma once
 
-class FireScaleHUD
+#include "CoreMinimal.h"
+#include "GameFramework/HUD.h"
+#include "FireScaleHUD.generated.h"
+
+UCLASS()
+class FIRESCALE_API AFireScaleHUD : public AHUD
 {
-public:
+	GENERATED_BODY()
 	
+public:
+	// FUNCTIONS
+	// -----------------------------
+
+	AFireScaleHUD();
+
+	virtual void BeginPlay() override;
 };
